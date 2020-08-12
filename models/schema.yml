@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: customer_profile
+    description: Summary table describing basic info about customers as well as their all time behaviours.
+    columns:
+        - name: customer_id
+          description: unique customer id
+          tests:
+            - not_null
+            - unique
+        - name: active
+          description: flag indicating if the customer is currently active
+          tests:
+            - not_null
+        - name: last_initial
+          description: the first initial of the customers last name
+          tests:
+            - accepted_values:
+                values: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+        - name: city
+          description: the customer city
+        - name: country
+          description: the customer country
+        - name: first_rental
+          description: the first date that the customer rented a video
+        - name: last_rental
+          description: the most recent date that the customer rented a video
+        - name: period_days
+          description: the number of lapsed days between first_rental and last_rental
+        - name: life_time_value
+          description: sum of total amount paid for rentals by the customer to date
+        - name: num_rental
+          description: total number of rentals by the customer to date
+        - name: num_return
+          description: total number of rentals returned by the customer to date
+        - name: num_late
+          description: total number of rentals late to date
+        - name: num_paid
+          description: total number of rentals paid for to date
+        - name: language
+          description: movie language most frequently watched by the customer
+          tests:
+            - accepted_values:
+                values: ['English', 'Italian', 'Japanese', 'Mandarin', 'French', 'German']
