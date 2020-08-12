@@ -22,7 +22,7 @@ Plugins:
 
 4. I restored the above data to my local postgres server to a database called dvd_rental as well as created a `dev` schema and a dbt user with proper permissions on the dvd_rental database. 
 
-5. I from there I used a variety of sources to help me get things going:
+5. I used a variety of sources to help me get things going:
 - https://docs.getdbt.com/tutorial/setting-up
 - https://www.startdataengineering.com/post/dbt-data-build-tool-tutorial/
 - https://github.com/mikekaminsky/dbt-setup-example
