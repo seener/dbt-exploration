@@ -9665,3 +9665,1170 @@ from (
 Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
 2020-08-12 20:30:46.266084 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa145c10d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa144623d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa145a8710>]}
 2020-08-12 20:30:46.266567 (MainThread): Flushing usage events
+2020-08-12 21:12:46.332080 (MainThread): Running with dbt=0.17.2
+2020-08-12 21:12:46.423743 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/sean/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-08-12 21:12:46.425745 (MainThread): Tracking: tracking
+2020-08-12 21:12:46.446128 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa19ef94d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1074e2710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa19ef3b10>]}
+2020-08-12 21:12:46.478296 (MainThread): Partial parsing not enabled
+2020-08-12 21:12:46.481116 (MainThread): Parsing macros/core.sql
+2020-08-12 21:12:46.487271 (MainThread): Parsing macros/materializations/helpers.sql
+2020-08-12 21:12:46.498428 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-08-12 21:12:46.500802 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-08-12 21:12:46.523521 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-08-12 21:12:46.563072 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-08-12 21:12:46.592123 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-08-12 21:12:46.594615 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-08-12 21:12:46.602944 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-08-12 21:12:46.621749 (MainThread): Parsing macros/materializations/table/table.sql
+2020-08-12 21:12:46.631058 (MainThread): Parsing macros/materializations/view/view.sql
+2020-08-12 21:12:46.639374 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-08-12 21:12:46.645625 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-08-12 21:12:46.646973 (MainThread): Parsing macros/etc/query.sql
+2020-08-12 21:12:46.648338 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-08-12 21:12:46.650635 (MainThread): Parsing macros/etc/datetime.sql
+2020-08-12 21:12:46.663539 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-08-12 21:12:46.666382 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-08-12 21:12:46.668698 (MainThread): Parsing macros/adapters/common.sql
+2020-08-12 21:12:46.736291 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-08-12 21:12:46.737754 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-08-12 21:12:46.738857 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-08-12 21:12:46.740171 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-08-12 21:12:46.742965 (MainThread): Parsing macros/catalog.sql
+2020-08-12 21:12:46.745821 (MainThread): Parsing macros/relations.sql
+2020-08-12 21:12:46.747903 (MainThread): Parsing macros/adapters.sql
+2020-08-12 21:12:46.782246 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-08-12 21:12:46.806090 (MainThread): Partial parsing not enabled
+2020-08-12 21:12:46.849363 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_profile".
+2020-08-12 21:12:46.849545 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:46.889808 (MainThread): Acquiring new postgres connection "model.dbt_play.customer".
+2020-08-12 21:12:46.890007 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:46.901311 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_rental_summary".
+2020-08-12 21:12:46.901484 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:46.913293 (MainThread): Acquiring new postgres connection "model.dbt_play.rental_payment".
+2020-08-12 21:12:46.913500 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:46.925897 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_life_time_value".
+2020-08-12 21:12:46.926083 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:46.940118 (MainThread): Acquiring new postgres connection "model.dbt_play.rental_details".
+2020-08-12 21:12:46.940296 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:46.955418 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_behaviour".
+2020-08-12 21:12:46.955699 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:46.969513 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_language_preference".
+2020-08-12 21:12:46.969686 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:46.984088 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_category_preference".
+2020-08-12 21:12:46.984266 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:46.998152 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_rating_preferences".
+2020-08-12 21:12:46.998351 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:47.298848 (MainThread): Found 10 models, 5 tests, 0 snapshots, 0 analyses, 134 macros, 0 operations, 0 seed files, 0 sources
+2020-08-12 21:12:47.300934 (MainThread): 
+2020-08-12 21:12:47.301416 (MainThread): Acquiring new postgres connection "master".
+2020-08-12 21:12:47.301568 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:47.320360 (ThreadPoolExecutor-0_0): Acquiring new postgres connection "list_dvd_rental".
+2020-08-12 21:12:47.320873 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-08-12 21:12:47.342365 (ThreadPoolExecutor-0_0): Using postgres connection "list_dvd_rental".
+2020-08-12 21:12:47.342571 (ThreadPoolExecutor-0_0): On list_dvd_rental: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "connection_name": "list_dvd_rental"} */
+
+    select distinct nspname from pg_namespace
+  
+2020-08-12 21:12:47.358070 (ThreadPoolExecutor-0_0): SQL status: SELECT 7 in 0.02 seconds
+2020-08-12 21:12:47.361514 (ThreadPoolExecutor-0_0): On list_dvd_rental: Close
+2020-08-12 21:12:47.387449 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_dvd_rental_dev".
+2020-08-12 21:12:47.387710 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2020-08-12 21:12:47.394236 (ThreadPoolExecutor-1_0): Using postgres connection "list_dvd_rental_dev".
+2020-08-12 21:12:47.394415 (ThreadPoolExecutor-1_0): On list_dvd_rental_dev: BEGIN
+2020-08-12 21:12:47.402330 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.01 seconds
+2020-08-12 21:12:47.402523 (ThreadPoolExecutor-1_0): Using postgres connection "list_dvd_rental_dev".
+2020-08-12 21:12:47.402637 (ThreadPoolExecutor-1_0): On list_dvd_rental_dev: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "connection_name": "list_dvd_rental_dev"} */
+select
+      'dvd_rental' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'dvd_rental' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+  
+2020-08-12 21:12:47.406570 (ThreadPoolExecutor-1_0): SQL status: SELECT 10 in 0.00 seconds
+2020-08-12 21:12:47.415333 (ThreadPoolExecutor-1_0): On list_dvd_rental_dev: ROLLBACK
+2020-08-12 21:12:47.415678 (ThreadPoolExecutor-1_0): On list_dvd_rental_dev: Close
+2020-08-12 21:12:47.441191 (MainThread): Using postgres connection "master".
+2020-08-12 21:12:47.441366 (MainThread): On master: BEGIN
+2020-08-12 21:12:47.448794 (MainThread): SQL status: BEGIN in 0.01 seconds
+2020-08-12 21:12:47.448992 (MainThread): Using postgres connection "master".
+2020-08-12 21:12:47.449110 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2020-08-12 21:12:47.840354 (MainThread): SQL status: SELECT 55 in 0.39 seconds
+2020-08-12 21:12:47.909742 (MainThread): On master: ROLLBACK
+2020-08-12 21:12:47.910207 (MainThread): Using postgres connection "master".
+2020-08-12 21:12:47.910354 (MainThread): On master: BEGIN
+2020-08-12 21:12:47.910718 (MainThread): SQL status: BEGIN in 0.00 seconds
+2020-08-12 21:12:47.910970 (MainThread): On master: COMMIT
+2020-08-12 21:12:47.911096 (MainThread): Using postgres connection "master".
+2020-08-12 21:12:47.911195 (MainThread): On master: COMMIT
+2020-08-12 21:12:47.911466 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-08-12 21:12:47.911621 (MainThread): On master: Close
+2020-08-12 21:12:47.912007 (MainThread): 17:12:47 | Concurrency: 1 threads (target='dev')
+2020-08-12 21:12:47.912374 (MainThread): 17:12:47 | 
+2020-08-12 21:12:47.914393 (Thread-1): Began running node model.dbt_play.rental_payment
+2020-08-12 21:12:47.915682 (Thread-1): 17:12:47 | 1 of 10 START view model dev.rental_payment.......................... [RUN]
+2020-08-12 21:12:47.916077 (Thread-1): Acquiring new postgres connection "model.dbt_play.rental_payment".
+2020-08-12 21:12:47.916196 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:47.916319 (Thread-1): Compiling model.dbt_play.rental_payment
+2020-08-12 21:12:47.952421 (Thread-1): Writing injected SQL for node "model.dbt_play.rental_payment"
+2020-08-12 21:12:47.954259 (Thread-1): finished collecting timing info
+2020-08-12 21:12:47.995289 (Thread-1): Using postgres connection "model.dbt_play.rental_payment".
+2020-08-12 21:12:47.995483 (Thread-1): On model.dbt_play.rental_payment: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.rental_payment"} */
+drop view if exists "dvd_rental"."dev"."rental_payment__dbt_tmp" cascade
+2020-08-12 21:12:48.003423 (Thread-1): SQL status: DROP VIEW in 0.01 seconds
+2020-08-12 21:12:48.006347 (Thread-1): Using postgres connection "model.dbt_play.rental_payment".
+2020-08-12 21:12:48.006515 (Thread-1): On model.dbt_play.rental_payment: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.rental_payment"} */
+drop view if exists "dvd_rental"."dev"."rental_payment__dbt_backup" cascade
+2020-08-12 21:12:48.006866 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.015658 (Thread-1): Writing runtime SQL for node "model.dbt_play.rental_payment"
+2020-08-12 21:12:48.016651 (Thread-1): Using postgres connection "model.dbt_play.rental_payment".
+2020-08-12 21:12:48.016863 (Thread-1): On model.dbt_play.rental_payment: BEGIN
+2020-08-12 21:12:48.017427 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-08-12 21:12:48.017635 (Thread-1): Using postgres connection "model.dbt_play.rental_payment".
+2020-08-12 21:12:48.017763 (Thread-1): On model.dbt_play.rental_payment: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.rental_payment"} */
+
+  create view "dvd_rental"."dev"."rental_payment__dbt_tmp" as (
+    with rental_payment as(
+    SELECT 
+        rental_id, 
+        sum(amount) as amount 
+    FROM dvd_rental.public.payment 
+    GROUP BY rental_id
+)
+
+SELECT * FROM rental_payment
+  );
+
+2020-08-12 21:12:48.023615 (Thread-1): SQL status: CREATE VIEW in 0.01 seconds
+2020-08-12 21:12:48.032694 (Thread-1): Using postgres connection "model.dbt_play.rental_payment".
+2020-08-12 21:12:48.033053 (Thread-1): On model.dbt_play.rental_payment: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.rental_payment"} */
+alter table "dvd_rental"."dev"."rental_payment" rename to "rental_payment__dbt_backup"
+2020-08-12 21:12:48.033607 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:48.036235 (Thread-1): Using postgres connection "model.dbt_play.rental_payment".
+2020-08-12 21:12:48.036376 (Thread-1): On model.dbt_play.rental_payment: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.rental_payment"} */
+alter table "dvd_rental"."dev"."rental_payment__dbt_tmp" rename to "rental_payment"
+2020-08-12 21:12:48.036991 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:48.044815 (Thread-1): On model.dbt_play.rental_payment: COMMIT
+2020-08-12 21:12:48.045000 (Thread-1): Using postgres connection "model.dbt_play.rental_payment".
+2020-08-12 21:12:48.045103 (Thread-1): On model.dbt_play.rental_payment: COMMIT
+2020-08-12 21:12:48.046029 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2020-08-12 21:12:48.050211 (Thread-1): Using postgres connection "model.dbt_play.rental_payment".
+2020-08-12 21:12:48.050401 (Thread-1): On model.dbt_play.rental_payment: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.rental_payment"} */
+drop view if exists "dvd_rental"."dev"."rental_payment__dbt_backup" cascade
+2020-08-12 21:12:48.053966 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.057370 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.058037 (Thread-1): On model.dbt_play.rental_payment: Close
+2020-08-12 21:12:48.059213 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7ef4269-0a20-4fd7-b49d-d0d844fc1e03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1a698ed0>]}
+2020-08-12 21:12:48.061481 (Thread-1): 17:12:48 | 1 of 10 OK created view model dev.rental_payment..................... [CREATE VIEW in 0.14s]
+2020-08-12 21:12:48.061819 (Thread-1): Finished running node model.dbt_play.rental_payment
+2020-08-12 21:12:48.062077 (Thread-1): Began running node model.dbt_play.customer
+2020-08-12 21:12:48.064860 (Thread-1): 17:12:48 | 2 of 10 START view model dev.customer................................ [RUN]
+2020-08-12 21:12:48.065444 (Thread-1): Acquiring new postgres connection "model.dbt_play.customer".
+2020-08-12 21:12:48.065640 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:48.065818 (Thread-1): Compiling model.dbt_play.customer
+2020-08-12 21:12:48.076496 (Thread-1): Writing injected SQL for node "model.dbt_play.customer"
+2020-08-12 21:12:48.079890 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.088503 (Thread-1): Using postgres connection "model.dbt_play.customer".
+2020-08-12 21:12:48.088778 (Thread-1): On model.dbt_play.customer: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer"} */
+drop view if exists "dvd_rental"."dev"."customer__dbt_tmp" cascade
+2020-08-12 21:12:48.113118 (Thread-1): SQL status: DROP VIEW in 0.02 seconds
+2020-08-12 21:12:48.115809 (Thread-1): Using postgres connection "model.dbt_play.customer".
+2020-08-12 21:12:48.116088 (Thread-1): On model.dbt_play.customer: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer"} */
+drop view if exists "dvd_rental"."dev"."customer__dbt_backup" cascade
+2020-08-12 21:12:48.116846 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.118548 (Thread-1): Writing runtime SQL for node "model.dbt_play.customer"
+2020-08-12 21:12:48.119182 (Thread-1): Using postgres connection "model.dbt_play.customer".
+2020-08-12 21:12:48.119483 (Thread-1): On model.dbt_play.customer: BEGIN
+2020-08-12 21:12:48.119851 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-08-12 21:12:48.119992 (Thread-1): Using postgres connection "model.dbt_play.customer".
+2020-08-12 21:12:48.120099 (Thread-1): On model.dbt_play.customer: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer"} */
+
+  create view "dvd_rental"."dev"."customer__dbt_tmp" as (
+    with customer as (
+    SELECT
+        a.customer_id,
+        a.active,
+        a.last_name,
+        c.city,
+        d.country
+    FROM dvd_rental.public.customer a
+    INNER JOIN dvd_rental.public.address b ON a.address_id = b.address_id
+    INNER JOIN dvd_rental.public.city c ON b.city_id = c.city_id
+    INNER JOIN dvd_rental.public.country d ON c.country_id = d.country_id
+)
+
+SELECT * FROM customer
+  );
+
+2020-08-12 21:12:48.132184 (Thread-1): SQL status: CREATE VIEW in 0.01 seconds
+2020-08-12 21:12:48.136800 (Thread-1): Using postgres connection "model.dbt_play.customer".
+2020-08-12 21:12:48.136992 (Thread-1): On model.dbt_play.customer: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer"} */
+alter table "dvd_rental"."dev"."customer" rename to "customer__dbt_backup"
+2020-08-12 21:12:48.137673 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:48.140901 (Thread-1): Using postgres connection "model.dbt_play.customer".
+2020-08-12 21:12:48.141165 (Thread-1): On model.dbt_play.customer: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer"} */
+alter table "dvd_rental"."dev"."customer__dbt_tmp" rename to "customer"
+2020-08-12 21:12:48.141798 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:48.143071 (Thread-1): On model.dbt_play.customer: COMMIT
+2020-08-12 21:12:48.143223 (Thread-1): Using postgres connection "model.dbt_play.customer".
+2020-08-12 21:12:48.143321 (Thread-1): On model.dbt_play.customer: COMMIT
+2020-08-12 21:12:48.148681 (Thread-1): SQL status: COMMIT in 0.01 seconds
+2020-08-12 21:12:48.150868 (Thread-1): Using postgres connection "model.dbt_play.customer".
+2020-08-12 21:12:48.151155 (Thread-1): On model.dbt_play.customer: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer"} */
+drop view if exists "dvd_rental"."dev"."customer__dbt_backup" cascade
+2020-08-12 21:12:48.152858 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.156159 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.156696 (Thread-1): On model.dbt_play.customer: Close
+2020-08-12 21:12:48.157787 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7ef4269-0a20-4fd7-b49d-d0d844fc1e03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1a6ffe50>]}
+2020-08-12 21:12:48.159333 (Thread-1): 17:12:48 | 2 of 10 OK created view model dev.customer........................... [CREATE VIEW in 0.09s]
+2020-08-12 21:12:48.159540 (Thread-1): Finished running node model.dbt_play.customer
+2020-08-12 21:12:48.159721 (Thread-1): Began running node model.dbt_play.customer_life_time_value
+2020-08-12 21:12:48.160837 (Thread-1): 17:12:48 | 3 of 10 START view model dev.customer_life_time_value................ [RUN]
+2020-08-12 21:12:48.161235 (Thread-1): Acquiring new postgres connection "model.dbt_play.customer_life_time_value".
+2020-08-12 21:12:48.161407 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:48.161529 (Thread-1): Compiling model.dbt_play.customer_life_time_value
+2020-08-12 21:12:48.167103 (Thread-1): Writing injected SQL for node "model.dbt_play.customer_life_time_value"
+2020-08-12 21:12:48.167850 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.179470 (Thread-1): Using postgres connection "model.dbt_play.customer_life_time_value".
+2020-08-12 21:12:48.180226 (Thread-1): On model.dbt_play.customer_life_time_value: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_life_time_value"} */
+drop view if exists "dvd_rental"."dev"."customer_life_time_value__dbt_tmp" cascade
+2020-08-12 21:12:48.196540 (Thread-1): SQL status: DROP VIEW in 0.02 seconds
+2020-08-12 21:12:48.200898 (Thread-1): Using postgres connection "model.dbt_play.customer_life_time_value".
+2020-08-12 21:12:48.201094 (Thread-1): On model.dbt_play.customer_life_time_value: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_life_time_value"} */
+drop view if exists "dvd_rental"."dev"."customer_life_time_value__dbt_backup" cascade
+2020-08-12 21:12:48.201451 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.202820 (Thread-1): Writing runtime SQL for node "model.dbt_play.customer_life_time_value"
+2020-08-12 21:12:48.203580 (Thread-1): Using postgres connection "model.dbt_play.customer_life_time_value".
+2020-08-12 21:12:48.203731 (Thread-1): On model.dbt_play.customer_life_time_value: BEGIN
+2020-08-12 21:12:48.204122 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-08-12 21:12:48.204258 (Thread-1): Using postgres connection "model.dbt_play.customer_life_time_value".
+2020-08-12 21:12:48.204371 (Thread-1): On model.dbt_play.customer_life_time_value: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_life_time_value"} */
+
+  create view "dvd_rental"."dev"."customer_life_time_value__dbt_tmp" as (
+    with customer_life_time_value as (
+    SELECT
+        customer_id,
+        sum(amount) AS life_time_value
+    FROM dvd_rental.public.payment
+    GROUP BY customer_id
+)
+
+SELECT * FROM customer_life_time_value
+  );
+
+2020-08-12 21:12:48.220073 (Thread-1): SQL status: CREATE VIEW in 0.02 seconds
+2020-08-12 21:12:48.295264 (Thread-1): Using postgres connection "model.dbt_play.customer_life_time_value".
+2020-08-12 21:12:48.295555 (Thread-1): On model.dbt_play.customer_life_time_value: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_life_time_value"} */
+alter table "dvd_rental"."dev"."customer_life_time_value" rename to "customer_life_time_value__dbt_backup"
+2020-08-12 21:12:48.298226 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:48.302987 (Thread-1): Using postgres connection "model.dbt_play.customer_life_time_value".
+2020-08-12 21:12:48.303179 (Thread-1): On model.dbt_play.customer_life_time_value: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_life_time_value"} */
+alter table "dvd_rental"."dev"."customer_life_time_value__dbt_tmp" rename to "customer_life_time_value"
+2020-08-12 21:12:48.303740 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:48.305106 (Thread-1): On model.dbt_play.customer_life_time_value: COMMIT
+2020-08-12 21:12:48.305238 (Thread-1): Using postgres connection "model.dbt_play.customer_life_time_value".
+2020-08-12 21:12:48.305337 (Thread-1): On model.dbt_play.customer_life_time_value: COMMIT
+2020-08-12 21:12:48.306604 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2020-08-12 21:12:48.308493 (Thread-1): Using postgres connection "model.dbt_play.customer_life_time_value".
+2020-08-12 21:12:48.308631 (Thread-1): On model.dbt_play.customer_life_time_value: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_life_time_value"} */
+drop view if exists "dvd_rental"."dev"."customer_life_time_value__dbt_backup" cascade
+2020-08-12 21:12:48.309900 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.312653 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.312964 (Thread-1): On model.dbt_play.customer_life_time_value: Close
+2020-08-12 21:12:48.313788 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7ef4269-0a20-4fd7-b49d-d0d844fc1e03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa19f039d0>]}
+2020-08-12 21:12:48.315252 (Thread-1): 17:12:48 | 3 of 10 OK created view model dev.customer_life_time_value........... [CREATE VIEW in 0.15s]
+2020-08-12 21:12:48.315471 (Thread-1): Finished running node model.dbt_play.customer_life_time_value
+2020-08-12 21:12:48.315704 (Thread-1): Began running node model.dbt_play.customer_rental_summary
+2020-08-12 21:12:48.316885 (Thread-1): 17:12:48 | 4 of 10 START view model dev.customer_rental_summary................. [RUN]
+2020-08-12 21:12:48.317325 (Thread-1): Acquiring new postgres connection "model.dbt_play.customer_rental_summary".
+2020-08-12 21:12:48.317476 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:48.317599 (Thread-1): Compiling model.dbt_play.customer_rental_summary
+2020-08-12 21:12:48.324532 (Thread-1): Writing injected SQL for node "model.dbt_play.customer_rental_summary"
+2020-08-12 21:12:48.325579 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.335554 (Thread-1): Using postgres connection "model.dbt_play.customer_rental_summary".
+2020-08-12 21:12:48.335871 (Thread-1): On model.dbt_play.customer_rental_summary: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_rental_summary"} */
+drop view if exists "dvd_rental"."dev"."customer_rental_summary__dbt_tmp" cascade
+2020-08-12 21:12:48.347090 (Thread-1): SQL status: DROP VIEW in 0.01 seconds
+2020-08-12 21:12:48.351188 (Thread-1): Using postgres connection "model.dbt_play.customer_rental_summary".
+2020-08-12 21:12:48.351484 (Thread-1): On model.dbt_play.customer_rental_summary: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_rental_summary"} */
+drop view if exists "dvd_rental"."dev"."customer_rental_summary__dbt_backup" cascade
+2020-08-12 21:12:48.354622 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.357368 (Thread-1): Writing runtime SQL for node "model.dbt_play.customer_rental_summary"
+2020-08-12 21:12:48.359143 (Thread-1): Using postgres connection "model.dbt_play.customer_rental_summary".
+2020-08-12 21:12:48.359816 (Thread-1): On model.dbt_play.customer_rental_summary: BEGIN
+2020-08-12 21:12:48.361917 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-08-12 21:12:48.362928 (Thread-1): Using postgres connection "model.dbt_play.customer_rental_summary".
+2020-08-12 21:12:48.364634 (Thread-1): On model.dbt_play.customer_rental_summary: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_rental_summary"} */
+
+  create view "dvd_rental"."dev"."customer_rental_summary__dbt_tmp" as (
+    with customer_rental_summary as (
+    SELECT 
+        customer_id, 
+        min(rental_date) as first_rental, 
+        max(rental_date) as last_rental,
+        count(*) as num_rental,
+        date_part('day', max(rental_date) - min(rental_date)) as period_days,
+        date_part('day', max(rental_date) - min(rental_date)) / 7 as period_weeks,
+        date_part('day', max(rental_date) - min(rental_date)) / 30.4 as period_months,
+        date_part('day', max(rental_date) - min(rental_date)) / 365 as period_years
+    FROM dvd_rental.public.rental
+    GROUP BY customer_id
+)
+
+SELECT * FROM customer_rental_summary
+  );
+
+2020-08-12 21:12:48.371619 (Thread-1): SQL status: CREATE VIEW in 0.01 seconds
+2020-08-12 21:12:48.377851 (Thread-1): Using postgres connection "model.dbt_play.customer_rental_summary".
+2020-08-12 21:12:48.378301 (Thread-1): On model.dbt_play.customer_rental_summary: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_rental_summary"} */
+alter table "dvd_rental"."dev"."customer_rental_summary" rename to "customer_rental_summary__dbt_backup"
+2020-08-12 21:12:48.380028 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:48.383715 (Thread-1): Using postgres connection "model.dbt_play.customer_rental_summary".
+2020-08-12 21:12:48.383928 (Thread-1): On model.dbt_play.customer_rental_summary: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_rental_summary"} */
+alter table "dvd_rental"."dev"."customer_rental_summary__dbt_tmp" rename to "customer_rental_summary"
+2020-08-12 21:12:48.384531 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:48.385808 (Thread-1): On model.dbt_play.customer_rental_summary: COMMIT
+2020-08-12 21:12:48.385950 (Thread-1): Using postgres connection "model.dbt_play.customer_rental_summary".
+2020-08-12 21:12:48.386051 (Thread-1): On model.dbt_play.customer_rental_summary: COMMIT
+2020-08-12 21:12:48.386791 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2020-08-12 21:12:48.388806 (Thread-1): Using postgres connection "model.dbt_play.customer_rental_summary".
+2020-08-12 21:12:48.388950 (Thread-1): On model.dbt_play.customer_rental_summary: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_rental_summary"} */
+drop view if exists "dvd_rental"."dev"."customer_rental_summary__dbt_backup" cascade
+2020-08-12 21:12:48.390646 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.393494 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.393791 (Thread-1): On model.dbt_play.customer_rental_summary: Close
+2020-08-12 21:12:48.394548 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7ef4269-0a20-4fd7-b49d-d0d844fc1e03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1a34cdd0>]}
+2020-08-12 21:12:48.396689 (Thread-1): 17:12:48 | 4 of 10 OK created view model dev.customer_rental_summary............ [CREATE VIEW in 0.08s]
+2020-08-12 21:12:48.397070 (Thread-1): Finished running node model.dbt_play.customer_rental_summary
+2020-08-12 21:12:48.397354 (Thread-1): Began running node model.dbt_play.rental_details
+2020-08-12 21:12:48.399508 (Thread-1): 17:12:48 | 5 of 10 START view model dev.rental_details.......................... [RUN]
+2020-08-12 21:12:48.400393 (Thread-1): Acquiring new postgres connection "model.dbt_play.rental_details".
+2020-08-12 21:12:48.400621 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:48.400794 (Thread-1): Compiling model.dbt_play.rental_details
+2020-08-12 21:12:48.419913 (Thread-1): Writing injected SQL for node "model.dbt_play.rental_details"
+2020-08-12 21:12:48.420772 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.455234 (Thread-1): Using postgres connection "model.dbt_play.rental_details".
+2020-08-12 21:12:48.455488 (Thread-1): On model.dbt_play.rental_details: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.rental_details"} */
+drop view if exists "dvd_rental"."dev"."rental_details__dbt_tmp" cascade
+2020-08-12 21:12:48.487884 (Thread-1): SQL status: DROP VIEW in 0.03 seconds
+2020-08-12 21:12:48.491317 (Thread-1): Using postgres connection "model.dbt_play.rental_details".
+2020-08-12 21:12:48.491622 (Thread-1): On model.dbt_play.rental_details: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.rental_details"} */
+drop view if exists "dvd_rental"."dev"."rental_details__dbt_backup" cascade
+2020-08-12 21:12:48.492359 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.495855 (Thread-1): Writing runtime SQL for node "model.dbt_play.rental_details"
+2020-08-12 21:12:48.496587 (Thread-1): Using postgres connection "model.dbt_play.rental_details".
+2020-08-12 21:12:48.496710 (Thread-1): On model.dbt_play.rental_details: BEGIN
+2020-08-12 21:12:48.497151 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-08-12 21:12:48.497335 (Thread-1): Using postgres connection "model.dbt_play.rental_details".
+2020-08-12 21:12:48.497453 (Thread-1): On model.dbt_play.rental_details: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.rental_details"} */
+
+  create view "dvd_rental"."dev"."rental_details__dbt_tmp" as (
+    with rental_payment as (
+    SELECT * FROM "dvd_rental"."dev"."rental_payment"
+),
+rental_details as(
+    SELECT
+        r.rental_id,
+        r.customer_id,
+        r.rental_date,
+        CASE WHEN r.return_date is null THEN FALSE ELSE TRUE END as returned,
+        CASE WHEN date_part('day', return_date - rental_date) > f.rental_duration THEN TRUE ELSE FALSE END as late,
+        CASE WHEN rental_payment.amount is null THEN FALSE WHEN rental_payment.amount <= 0 THEN FALSE ELSE TRUE END as paid,
+        f.title as film_title,
+        f.rating as film_rating,
+        l.name as film_language,
+        c.name as film_category,
+        CASE WHEN rental_payment.amount is null THEN 0 ELSE rental_payment.amount END as payment_amount
+    FROM dvd_rental.public.rental r
+    INNER JOIN dvd_rental.public.inventory i ON r.inventory_id = i.inventory_id
+    INNER JOIN dvd_rental.public.film f ON i.film_id = f.film_id
+    INNER JOIN dvd_rental.public.language l ON f.language_id = l.language_id
+    INNER JOIN dvd_rental.public.film_category fc ON f.film_id = fc.film_id
+    INNER JOIN dvd_rental.public.category c ON fc.category_id = c.category_id
+    LEFT JOIN rental_payment ON r.rental_id = rental_payment.rental_id
+)
+
+SELECT * FROM rental_details
+  );
+
+2020-08-12 21:12:48.503835 (Thread-1): SQL status: CREATE VIEW in 0.01 seconds
+2020-08-12 21:12:48.506944 (Thread-1): Using postgres connection "model.dbt_play.rental_details".
+2020-08-12 21:12:48.507140 (Thread-1): On model.dbt_play.rental_details: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.rental_details"} */
+alter table "dvd_rental"."dev"."rental_details__dbt_tmp" rename to "rental_details"
+2020-08-12 21:12:48.508187 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:48.510063 (Thread-1): On model.dbt_play.rental_details: COMMIT
+2020-08-12 21:12:48.510252 (Thread-1): Using postgres connection "model.dbt_play.rental_details".
+2020-08-12 21:12:48.510422 (Thread-1): On model.dbt_play.rental_details: COMMIT
+2020-08-12 21:12:48.516957 (Thread-1): SQL status: COMMIT in 0.01 seconds
+2020-08-12 21:12:48.519754 (Thread-1): Using postgres connection "model.dbt_play.rental_details".
+2020-08-12 21:12:48.519945 (Thread-1): On model.dbt_play.rental_details: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.rental_details"} */
+drop view if exists "dvd_rental"."dev"."rental_details__dbt_backup" cascade
+2020-08-12 21:12:48.520279 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.522849 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.523192 (Thread-1): On model.dbt_play.rental_details: Close
+2020-08-12 21:12:48.523994 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7ef4269-0a20-4fd7-b49d-d0d844fc1e03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1a61bd90>]}
+2020-08-12 21:12:48.525944 (Thread-1): 17:12:48 | 5 of 10 OK created view model dev.rental_details..................... [CREATE VIEW in 0.12s]
+2020-08-12 21:12:48.526173 (Thread-1): Finished running node model.dbt_play.rental_details
+2020-08-12 21:12:48.526842 (Thread-1): Began running node model.dbt_play.customer_behaviour
+2020-08-12 21:12:48.528272 (Thread-1): 17:12:48 | 6 of 10 START view model dev.customer_behaviour...................... [RUN]
+2020-08-12 21:12:48.528774 (Thread-1): Acquiring new postgres connection "model.dbt_play.customer_behaviour".
+2020-08-12 21:12:48.528932 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:48.529048 (Thread-1): Compiling model.dbt_play.customer_behaviour
+2020-08-12 21:12:48.539922 (Thread-1): Writing injected SQL for node "model.dbt_play.customer_behaviour"
+2020-08-12 21:12:48.541505 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.566417 (Thread-1): Using postgres connection "model.dbt_play.customer_behaviour".
+2020-08-12 21:12:48.566608 (Thread-1): On model.dbt_play.customer_behaviour: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_behaviour"} */
+drop view if exists "dvd_rental"."dev"."customer_behaviour__dbt_tmp" cascade
+2020-08-12 21:12:48.577607 (Thread-1): SQL status: DROP VIEW in 0.01 seconds
+2020-08-12 21:12:48.583716 (Thread-1): Using postgres connection "model.dbt_play.customer_behaviour".
+2020-08-12 21:12:48.583899 (Thread-1): On model.dbt_play.customer_behaviour: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_behaviour"} */
+drop view if exists "dvd_rental"."dev"."customer_behaviour__dbt_backup" cascade
+2020-08-12 21:12:48.584549 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.586128 (Thread-1): Writing runtime SQL for node "model.dbt_play.customer_behaviour"
+2020-08-12 21:12:48.586714 (Thread-1): Using postgres connection "model.dbt_play.customer_behaviour".
+2020-08-12 21:12:48.586832 (Thread-1): On model.dbt_play.customer_behaviour: BEGIN
+2020-08-12 21:12:48.587146 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-08-12 21:12:48.587269 (Thread-1): Using postgres connection "model.dbt_play.customer_behaviour".
+2020-08-12 21:12:48.587365 (Thread-1): On model.dbt_play.customer_behaviour: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_behaviour"} */
+
+  create view "dvd_rental"."dev"."customer_behaviour__dbt_tmp" as (
+    with rental_details as (
+    SELECT 
+        customer_id,
+        returned,
+        late, 
+        paid
+    FROM "dvd_rental"."dev"."rental_details"
+),
+customer_behaviour as(
+    SELECT 
+        customer_id, 
+        sum(cast(returned as int)) as num_return, 
+        sum(cast(late as int)) as num_late, 
+        sum(cast(paid as int)) as num_paid 
+    FROM rental_details 
+    GROUP BY customer_id
+)
+
+SELECT * FROM customer_behaviour
+  );
+
+2020-08-12 21:12:48.596738 (Thread-1): SQL status: CREATE VIEW in 0.01 seconds
+2020-08-12 21:12:48.599770 (Thread-1): Using postgres connection "model.dbt_play.customer_behaviour".
+2020-08-12 21:12:48.599957 (Thread-1): On model.dbt_play.customer_behaviour: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_behaviour"} */
+alter table "dvd_rental"."dev"."customer_behaviour__dbt_tmp" rename to "customer_behaviour"
+2020-08-12 21:12:48.600699 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:48.602112 (Thread-1): On model.dbt_play.customer_behaviour: COMMIT
+2020-08-12 21:12:48.602264 (Thread-1): Using postgres connection "model.dbt_play.customer_behaviour".
+2020-08-12 21:12:48.602373 (Thread-1): On model.dbt_play.customer_behaviour: COMMIT
+2020-08-12 21:12:48.609296 (Thread-1): SQL status: COMMIT in 0.01 seconds
+2020-08-12 21:12:48.611981 (Thread-1): Using postgres connection "model.dbt_play.customer_behaviour".
+2020-08-12 21:12:48.612148 (Thread-1): On model.dbt_play.customer_behaviour: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_behaviour"} */
+drop view if exists "dvd_rental"."dev"."customer_behaviour__dbt_backup" cascade
+2020-08-12 21:12:48.612481 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.615590 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.615939 (Thread-1): On model.dbt_play.customer_behaviour: Close
+2020-08-12 21:12:48.616772 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7ef4269-0a20-4fd7-b49d-d0d844fc1e03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1a3231d0>]}
+2020-08-12 21:12:48.618671 (Thread-1): 17:12:48 | 6 of 10 OK created view model dev.customer_behaviour................. [CREATE VIEW in 0.09s]
+2020-08-12 21:12:48.618899 (Thread-1): Finished running node model.dbt_play.customer_behaviour
+2020-08-12 21:12:48.619125 (Thread-1): Began running node model.dbt_play.customer_language_preference
+2020-08-12 21:12:48.620663 (Thread-1): 17:12:48 | 7 of 10 START view model dev.customer_language_preference............ [RUN]
+2020-08-12 21:12:48.621190 (Thread-1): Acquiring new postgres connection "model.dbt_play.customer_language_preference".
+2020-08-12 21:12:48.621325 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:48.621455 (Thread-1): Compiling model.dbt_play.customer_language_preference
+2020-08-12 21:12:48.630296 (Thread-1): Writing injected SQL for node "model.dbt_play.customer_language_preference"
+2020-08-12 21:12:48.633120 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.646655 (Thread-1): Using postgres connection "model.dbt_play.customer_language_preference".
+2020-08-12 21:12:48.647151 (Thread-1): On model.dbt_play.customer_language_preference: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_language_preference"} */
+drop view if exists "dvd_rental"."dev"."customer_language_preference__dbt_tmp" cascade
+2020-08-12 21:12:48.662366 (Thread-1): SQL status: DROP VIEW in 0.01 seconds
+2020-08-12 21:12:48.665033 (Thread-1): Using postgres connection "model.dbt_play.customer_language_preference".
+2020-08-12 21:12:48.665216 (Thread-1): On model.dbt_play.customer_language_preference: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_language_preference"} */
+drop view if exists "dvd_rental"."dev"."customer_language_preference__dbt_backup" cascade
+2020-08-12 21:12:48.665544 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.666975 (Thread-1): Writing runtime SQL for node "model.dbt_play.customer_language_preference"
+2020-08-12 21:12:48.667617 (Thread-1): Using postgres connection "model.dbt_play.customer_language_preference".
+2020-08-12 21:12:48.667750 (Thread-1): On model.dbt_play.customer_language_preference: BEGIN
+2020-08-12 21:12:48.668084 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-08-12 21:12:48.668202 (Thread-1): Using postgres connection "model.dbt_play.customer_language_preference".
+2020-08-12 21:12:48.668299 (Thread-1): On model.dbt_play.customer_language_preference: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_language_preference"} */
+
+  create view "dvd_rental"."dev"."customer_language_preference__dbt_tmp" as (
+    with rental_details as (
+    SELECT * FROM "dvd_rental"."dev"."rental_details"
+),
+customer_language_preference as (
+    SELECT DISTINCT ON (customer_id)
+        customer_id,
+        film_language as language
+    FROM rental_details
+    GROUP BY customer_id, film_language
+    ORDER BY customer_id ASC, COUNT(*) DESC
+)
+
+SELECT * FROM customer_language_preference
+  );
+
+2020-08-12 21:12:48.673026 (Thread-1): SQL status: CREATE VIEW in 0.00 seconds
+2020-08-12 21:12:48.678231 (Thread-1): Using postgres connection "model.dbt_play.customer_language_preference".
+2020-08-12 21:12:48.678754 (Thread-1): On model.dbt_play.customer_language_preference: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_language_preference"} */
+alter table "dvd_rental"."dev"."customer_language_preference__dbt_tmp" rename to "customer_language_preference"
+2020-08-12 21:12:48.681841 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:48.684564 (Thread-1): On model.dbt_play.customer_language_preference: COMMIT
+2020-08-12 21:12:48.684746 (Thread-1): Using postgres connection "model.dbt_play.customer_language_preference".
+2020-08-12 21:12:48.684848 (Thread-1): On model.dbt_play.customer_language_preference: COMMIT
+2020-08-12 21:12:48.691276 (Thread-1): SQL status: COMMIT in 0.01 seconds
+2020-08-12 21:12:48.693384 (Thread-1): Using postgres connection "model.dbt_play.customer_language_preference".
+2020-08-12 21:12:48.693522 (Thread-1): On model.dbt_play.customer_language_preference: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_language_preference"} */
+drop view if exists "dvd_rental"."dev"."customer_language_preference__dbt_backup" cascade
+2020-08-12 21:12:48.693827 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.696909 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.697334 (Thread-1): On model.dbt_play.customer_language_preference: Close
+2020-08-12 21:12:48.698076 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7ef4269-0a20-4fd7-b49d-d0d844fc1e03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1a360550>]}
+2020-08-12 21:12:48.699460 (Thread-1): 17:12:48 | 7 of 10 OK created view model dev.customer_language_preference....... [CREATE VIEW in 0.08s]
+2020-08-12 21:12:48.699732 (Thread-1): Finished running node model.dbt_play.customer_language_preference
+2020-08-12 21:12:48.699940 (Thread-1): Began running node model.dbt_play.customer_category_preference
+2020-08-12 21:12:48.701241 (Thread-1): 17:12:48 | 8 of 10 START view model dev.customer_category_preference............ [RUN]
+2020-08-12 21:12:48.701674 (Thread-1): Acquiring new postgres connection "model.dbt_play.customer_category_preference".
+2020-08-12 21:12:48.701969 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:48.702123 (Thread-1): Compiling model.dbt_play.customer_category_preference
+2020-08-12 21:12:48.711213 (Thread-1): Writing injected SQL for node "model.dbt_play.customer_category_preference"
+2020-08-12 21:12:48.713218 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.721895 (Thread-1): Using postgres connection "model.dbt_play.customer_category_preference".
+2020-08-12 21:12:48.722259 (Thread-1): On model.dbt_play.customer_category_preference: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_category_preference"} */
+drop view if exists "dvd_rental"."dev"."customer_category_preference__dbt_tmp" cascade
+2020-08-12 21:12:48.735175 (Thread-1): SQL status: DROP VIEW in 0.01 seconds
+2020-08-12 21:12:48.739187 (Thread-1): Using postgres connection "model.dbt_play.customer_category_preference".
+2020-08-12 21:12:48.741612 (Thread-1): On model.dbt_play.customer_category_preference: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_category_preference"} */
+drop view if exists "dvd_rental"."dev"."customer_category_preference__dbt_backup" cascade
+2020-08-12 21:12:48.742218 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.745801 (Thread-1): Writing runtime SQL for node "model.dbt_play.customer_category_preference"
+2020-08-12 21:12:48.746698 (Thread-1): Using postgres connection "model.dbt_play.customer_category_preference".
+2020-08-12 21:12:48.746871 (Thread-1): On model.dbt_play.customer_category_preference: BEGIN
+2020-08-12 21:12:48.747235 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-08-12 21:12:48.747383 (Thread-1): Using postgres connection "model.dbt_play.customer_category_preference".
+2020-08-12 21:12:48.747485 (Thread-1): On model.dbt_play.customer_category_preference: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_category_preference"} */
+
+  create view "dvd_rental"."dev"."customer_category_preference__dbt_tmp" as (
+    with rental_details as (
+    SELECT * FROM "dvd_rental"."dev"."rental_details"
+),
+customer_category_preference as (
+    SELECT 
+        customer_id, 
+        film_category, 
+        count(*) as number, 
+        sum(payment_amount) as dollars 
+    FROM rental_details 
+    GROUP BY customer_id, film_category
+    ORDER BY customer_id ASC, count(*) DESC
+)
+
+SELECT * FROM customer_category_preference
+  );
+
+2020-08-12 21:12:48.775822 (Thread-1): SQL status: CREATE VIEW in 0.03 seconds
+2020-08-12 21:12:48.778958 (Thread-1): Using postgres connection "model.dbt_play.customer_category_preference".
+2020-08-12 21:12:48.779145 (Thread-1): On model.dbt_play.customer_category_preference: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_category_preference"} */
+alter table "dvd_rental"."dev"."customer_category_preference__dbt_tmp" rename to "customer_category_preference"
+2020-08-12 21:12:48.779735 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:48.781590 (Thread-1): On model.dbt_play.customer_category_preference: COMMIT
+2020-08-12 21:12:48.781796 (Thread-1): Using postgres connection "model.dbt_play.customer_category_preference".
+2020-08-12 21:12:48.781942 (Thread-1): On model.dbt_play.customer_category_preference: COMMIT
+2020-08-12 21:12:48.782563 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2020-08-12 21:12:48.784617 (Thread-1): Using postgres connection "model.dbt_play.customer_category_preference".
+2020-08-12 21:12:48.784838 (Thread-1): On model.dbt_play.customer_category_preference: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_category_preference"} */
+drop view if exists "dvd_rental"."dev"."customer_category_preference__dbt_backup" cascade
+2020-08-12 21:12:48.785315 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.788204 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.788584 (Thread-1): On model.dbt_play.customer_category_preference: Close
+2020-08-12 21:12:48.789619 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7ef4269-0a20-4fd7-b49d-d0d844fc1e03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1a6225d0>]}
+2020-08-12 21:12:48.791043 (Thread-1): 17:12:48 | 8 of 10 OK created view model dev.customer_category_preference....... [CREATE VIEW in 0.09s]
+2020-08-12 21:12:48.791248 (Thread-1): Finished running node model.dbt_play.customer_category_preference
+2020-08-12 21:12:48.791417 (Thread-1): Began running node model.dbt_play.customer_rating_preferences
+2020-08-12 21:12:48.792550 (Thread-1): 17:12:48 | 9 of 10 START view model dev.customer_rating_preferences............. [RUN]
+2020-08-12 21:12:48.792963 (Thread-1): Acquiring new postgres connection "model.dbt_play.customer_rating_preferences".
+2020-08-12 21:12:48.793099 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:48.793218 (Thread-1): Compiling model.dbt_play.customer_rating_preferences
+2020-08-12 21:12:48.801616 (Thread-1): Writing injected SQL for node "model.dbt_play.customer_rating_preferences"
+2020-08-12 21:12:48.802758 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.815597 (Thread-1): Using postgres connection "model.dbt_play.customer_rating_preferences".
+2020-08-12 21:12:48.815863 (Thread-1): On model.dbt_play.customer_rating_preferences: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_rating_preferences"} */
+drop view if exists "dvd_rental"."dev"."customer_rating_preferences__dbt_tmp" cascade
+2020-08-12 21:12:48.856127 (Thread-1): SQL status: DROP VIEW in 0.04 seconds
+2020-08-12 21:12:48.860871 (Thread-1): Using postgres connection "model.dbt_play.customer_rating_preferences".
+2020-08-12 21:12:48.861098 (Thread-1): On model.dbt_play.customer_rating_preferences: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_rating_preferences"} */
+drop view if exists "dvd_rental"."dev"."customer_rating_preferences__dbt_backup" cascade
+2020-08-12 21:12:48.861619 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.864425 (Thread-1): Writing runtime SQL for node "model.dbt_play.customer_rating_preferences"
+2020-08-12 21:12:48.865121 (Thread-1): Using postgres connection "model.dbt_play.customer_rating_preferences".
+2020-08-12 21:12:48.865302 (Thread-1): On model.dbt_play.customer_rating_preferences: BEGIN
+2020-08-12 21:12:48.865714 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-08-12 21:12:48.865897 (Thread-1): Using postgres connection "model.dbt_play.customer_rating_preferences".
+2020-08-12 21:12:48.866054 (Thread-1): On model.dbt_play.customer_rating_preferences: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_rating_preferences"} */
+
+  create view "dvd_rental"."dev"."customer_rating_preferences__dbt_tmp" as (
+    with rental_details as (
+    SELECT * FROM "dvd_rental"."dev"."rental_details"
+),
+customer_rating_preference as (
+    SELECT 
+        customer_id, 
+        film_rating, 
+        count(*) as number, 
+        sum(payment_amount) as dollars 
+    FROM rental_details 
+    GROUP BY customer_id, film_rating
+    ORDER BY customer_id ASC, count(*) DESC
+)
+
+SELECT * FROM customer_rating_preference
+  );
+
+2020-08-12 21:12:48.870480 (Thread-1): SQL status: CREATE VIEW in 0.00 seconds
+2020-08-12 21:12:48.874885 (Thread-1): Using postgres connection "model.dbt_play.customer_rating_preferences".
+2020-08-12 21:12:48.875082 (Thread-1): On model.dbt_play.customer_rating_preferences: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_rating_preferences"} */
+alter table "dvd_rental"."dev"."customer_rating_preferences__dbt_tmp" rename to "customer_rating_preferences"
+2020-08-12 21:12:48.876382 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:48.877907 (Thread-1): On model.dbt_play.customer_rating_preferences: COMMIT
+2020-08-12 21:12:48.878074 (Thread-1): Using postgres connection "model.dbt_play.customer_rating_preferences".
+2020-08-12 21:12:48.878172 (Thread-1): On model.dbt_play.customer_rating_preferences: COMMIT
+2020-08-12 21:12:48.890167 (Thread-1): SQL status: COMMIT in 0.01 seconds
+2020-08-12 21:12:48.893039 (Thread-1): Using postgres connection "model.dbt_play.customer_rating_preferences".
+2020-08-12 21:12:48.893192 (Thread-1): On model.dbt_play.customer_rating_preferences: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_rating_preferences"} */
+drop view if exists "dvd_rental"."dev"."customer_rating_preferences__dbt_backup" cascade
+2020-08-12 21:12:48.893516 (Thread-1): SQL status: DROP VIEW in 0.00 seconds
+2020-08-12 21:12:48.896428 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.896768 (Thread-1): On model.dbt_play.customer_rating_preferences: Close
+2020-08-12 21:12:48.897488 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7ef4269-0a20-4fd7-b49d-d0d844fc1e03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1a66f090>]}
+2020-08-12 21:12:48.899154 (Thread-1): 17:12:48 | 9 of 10 OK created view model dev.customer_rating_preferences........ [CREATE VIEW in 0.10s]
+2020-08-12 21:12:48.899408 (Thread-1): Finished running node model.dbt_play.customer_rating_preferences
+2020-08-12 21:12:48.899753 (Thread-1): Began running node model.dbt_play.customer_profile
+2020-08-12 21:12:48.901547 (Thread-1): 17:12:48 | 10 of 10 START table model dev.customer_profile...................... [RUN]
+2020-08-12 21:12:48.902186 (Thread-1): Acquiring new postgres connection "model.dbt_play.customer_profile".
+2020-08-12 21:12:48.902385 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:48.902580 (Thread-1): Compiling model.dbt_play.customer_profile
+2020-08-12 21:12:48.938054 (Thread-1): Writing injected SQL for node "model.dbt_play.customer_profile"
+2020-08-12 21:12:48.939040 (Thread-1): finished collecting timing info
+2020-08-12 21:12:48.979635 (Thread-1): Using postgres connection "model.dbt_play.customer_profile".
+2020-08-12 21:12:48.980245 (Thread-1): On model.dbt_play.customer_profile: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_profile"} */
+drop table if exists "dvd_rental"."dev"."customer_profile__dbt_tmp" cascade
+2020-08-12 21:12:48.989955 (Thread-1): SQL status: DROP TABLE in 0.01 seconds
+2020-08-12 21:12:48.992445 (Thread-1): Using postgres connection "model.dbt_play.customer_profile".
+2020-08-12 21:12:48.992580 (Thread-1): On model.dbt_play.customer_profile: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_profile"} */
+drop table if exists "dvd_rental"."dev"."customer_profile__dbt_backup" cascade
+2020-08-12 21:12:48.992993 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-08-12 21:12:49.000033 (Thread-1): Writing runtime SQL for node "model.dbt_play.customer_profile"
+2020-08-12 21:12:49.000668 (Thread-1): Using postgres connection "model.dbt_play.customer_profile".
+2020-08-12 21:12:49.000788 (Thread-1): On model.dbt_play.customer_profile: BEGIN
+2020-08-12 21:12:49.001127 (Thread-1): SQL status: BEGIN in 0.00 seconds
+2020-08-12 21:12:49.001241 (Thread-1): Using postgres connection "model.dbt_play.customer_profile".
+2020-08-12 21:12:49.001335 (Thread-1): On model.dbt_play.customer_profile: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_profile"} */
+
+
+  create  table "dvd_rental"."dev"."customer_profile__dbt_tmp"
+  as (
+    with customer as (
+    SELECT * FROM "dvd_rental"."dev"."customer"
+),
+rental as (
+    SELECT * FROM "dvd_rental"."dev"."customer_rental_summary"
+),
+ltv as (
+    SELECT * FROM "dvd_rental"."dev"."customer_life_time_value"
+),
+lang as (
+    SELECT * FROM "dvd_rental"."dev"."customer_language_preference"
+),
+behave as (
+    SELECT *FROM "dvd_rental"."dev"."customer_behaviour"
+),
+customer_profile as (
+    SELECT 
+        customer.customer_id,
+        customer.active,
+        left(customer.last_name, 1) as last_initial,
+        customer.city,
+        customer.country,
+        rental.first_rental,
+        rental.last_rental,
+        rental.period_days,
+        ltv.life_time_value,
+        rental.num_rental,
+        behave.num_return,
+        behave.num_late,
+        behave.num_paid,
+        lang.language
+    FROM customer
+    LEFT JOIN rental USING(customer_id)
+    LEFT JOIN ltv USING(customer_id)
+    LEFT JOIN lang USING(customer_id)
+    LEFT JOIN behave USING(customer_id)
+)
+
+SELECT * FROM customer_profile
+  );
+2020-08-12 21:12:49.154604 (Thread-1): SQL status: SELECT 599 in 0.15 seconds
+2020-08-12 21:12:49.159459 (Thread-1): Using postgres connection "model.dbt_play.customer_profile".
+2020-08-12 21:12:49.159637 (Thread-1): On model.dbt_play.customer_profile: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_profile"} */
+alter table "dvd_rental"."dev"."customer_profile" rename to "customer_profile__dbt_backup"
+2020-08-12 21:12:49.160147 (Thread-1): SQL status: ALTER TABLE in 0.00 seconds
+2020-08-12 21:12:49.163103 (Thread-1): Using postgres connection "model.dbt_play.customer_profile".
+2020-08-12 21:12:49.163266 (Thread-1): On model.dbt_play.customer_profile: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_profile"} */
+alter table "dvd_rental"."dev"."customer_profile__dbt_tmp" rename to "customer_profile"
+2020-08-12 21:12:49.168578 (Thread-1): SQL status: ALTER TABLE in 0.01 seconds
+2020-08-12 21:12:49.170095 (Thread-1): On model.dbt_play.customer_profile: COMMIT
+2020-08-12 21:12:49.170235 (Thread-1): Using postgres connection "model.dbt_play.customer_profile".
+2020-08-12 21:12:49.170348 (Thread-1): On model.dbt_play.customer_profile: COMMIT
+2020-08-12 21:12:49.171412 (Thread-1): SQL status: COMMIT in 0.00 seconds
+2020-08-12 21:12:49.174072 (Thread-1): Using postgres connection "model.dbt_play.customer_profile".
+2020-08-12 21:12:49.174353 (Thread-1): On model.dbt_play.customer_profile: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "model.dbt_play.customer_profile"} */
+drop table if exists "dvd_rental"."dev"."customer_profile__dbt_backup" cascade
+2020-08-12 21:12:49.177490 (Thread-1): SQL status: DROP TABLE in 0.00 seconds
+2020-08-12 21:12:49.180373 (Thread-1): finished collecting timing info
+2020-08-12 21:12:49.180652 (Thread-1): On model.dbt_play.customer_profile: Close
+2020-08-12 21:12:49.181420 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'd7ef4269-0a20-4fd7-b49d-d0d844fc1e03', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1a735390>]}
+2020-08-12 21:12:49.182655 (Thread-1): 17:12:49 | 10 of 10 OK created table model dev.customer_profile................. [SELECT 599 in 0.28s]
+2020-08-12 21:12:49.182875 (Thread-1): Finished running node model.dbt_play.customer_profile
+2020-08-12 21:12:49.278391 (MainThread): Acquiring new postgres connection "master".
+2020-08-12 21:12:49.278661 (MainThread): Opening a new connection, currently in state closed
+2020-08-12 21:12:49.278902 (MainThread): Using postgres connection "master".
+2020-08-12 21:12:49.279013 (MainThread): On master: BEGIN
+2020-08-12 21:12:49.288162 (MainThread): SQL status: BEGIN in 0.01 seconds
+2020-08-12 21:12:49.288370 (MainThread): On master: COMMIT
+2020-08-12 21:12:49.288490 (MainThread): Using postgres connection "master".
+2020-08-12 21:12:49.288693 (MainThread): On master: COMMIT
+2020-08-12 21:12:49.289024 (MainThread): SQL status: COMMIT in 0.00 seconds
+2020-08-12 21:12:49.289184 (MainThread): On master: Close
+2020-08-12 21:12:49.289659 (MainThread): 17:12:49 | 
+2020-08-12 21:12:49.289857 (MainThread): 17:12:49 | Finished running 9 view models, 1 table model in 1.99s.
+2020-08-12 21:12:49.290044 (MainThread): Connection 'master' was properly closed.
+2020-08-12 21:12:49.290185 (MainThread): Connection 'model.dbt_play.customer_profile' was properly closed.
+2020-08-12 21:12:49.332771 (MainThread): 
+2020-08-12 21:12:49.332972 (MainThread): Completed successfully
+2020-08-12 21:12:49.333116 (MainThread): 
+Done. PASS=10 WARN=0 ERROR=0 SKIP=0 TOTAL=10
+2020-08-12 21:12:49.333324 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1a67de90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1a66f090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1a622150>]}
+2020-08-12 21:12:49.333564 (MainThread): Flushing usage events
+2020-08-12 21:12:54.434330 (MainThread): Running with dbt=0.17.2
+2020-08-12 21:12:54.518586 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.test.TestTask'>, data=False, debug=False, exclude=None, fail_fast=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/sean/.dbt', project_dir=None, record_timing_info=None, rpc_method='test', schema=False, single_threaded=False, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, vars='{}', version_check=True, warn_error=False, which='test', write_json=True)
+2020-08-12 21:12:54.519804 (MainThread): Tracking: tracking
+2020-08-12 21:12:54.538357 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1439f890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa1439f610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10197d750>]}
+2020-08-12 21:12:54.570412 (MainThread): Partial parsing not enabled
+2020-08-12 21:12:54.573018 (MainThread): Parsing macros/core.sql
+2020-08-12 21:12:54.579161 (MainThread): Parsing macros/materializations/helpers.sql
+2020-08-12 21:12:54.589746 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-08-12 21:12:54.592002 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-08-12 21:12:54.613608 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-08-12 21:12:54.653836 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-08-12 21:12:54.682036 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-08-12 21:12:54.684461 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-08-12 21:12:54.694159 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-08-12 21:12:54.714718 (MainThread): Parsing macros/materializations/table/table.sql
+2020-08-12 21:12:54.723890 (MainThread): Parsing macros/materializations/view/view.sql
+2020-08-12 21:12:54.731941 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-08-12 21:12:54.738446 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-08-12 21:12:54.739654 (MainThread): Parsing macros/etc/query.sql
+2020-08-12 21:12:54.740928 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-08-12 21:12:54.742897 (MainThread): Parsing macros/etc/datetime.sql
+2020-08-12 21:12:54.755540 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-08-12 21:12:54.758276 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-08-12 21:12:54.761108 (MainThread): Parsing macros/adapters/common.sql
+2020-08-12 21:12:54.831318 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-08-12 21:12:54.832823 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-08-12 21:12:54.834299 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-08-12 21:12:54.836134 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-08-12 21:12:54.841141 (MainThread): Parsing macros/catalog.sql
+2020-08-12 21:12:54.845029 (MainThread): Parsing macros/relations.sql
+2020-08-12 21:12:54.847249 (MainThread): Parsing macros/adapters.sql
+2020-08-12 21:12:54.876281 (MainThread): Parsing macros/materializations/snapshot_merge.sql
+2020-08-12 21:12:54.899685 (MainThread): Partial parsing not enabled
+2020-08-12 21:12:54.939882 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_profile".
+2020-08-12 21:12:54.940058 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:54.980025 (MainThread): Acquiring new postgres connection "model.dbt_play.customer".
+2020-08-12 21:12:54.980202 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:54.991950 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_rental_summary".
+2020-08-12 21:12:54.992117 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:55.004250 (MainThread): Acquiring new postgres connection "model.dbt_play.rental_payment".
+2020-08-12 21:12:55.004426 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:55.015605 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_life_time_value".
+2020-08-12 21:12:55.015775 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:55.026996 (MainThread): Acquiring new postgres connection "model.dbt_play.rental_details".
+2020-08-12 21:12:55.027163 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:55.040526 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_behaviour".
+2020-08-12 21:12:55.040695 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:55.054570 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_language_preference".
+2020-08-12 21:12:55.054742 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:55.069274 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_category_preference".
+2020-08-12 21:12:55.069451 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:55.082963 (MainThread): Acquiring new postgres connection "model.dbt_play.customer_rating_preferences".
+2020-08-12 21:12:55.083160 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:55.389949 (MainThread): Found 10 models, 5 tests, 0 snapshots, 0 analyses, 134 macros, 0 operations, 0 seed files, 0 sources
+2020-08-12 21:12:55.391673 (MainThread): 
+2020-08-12 21:12:55.392142 (MainThread): Acquiring new postgres connection "master".
+2020-08-12 21:12:55.392290 (MainThread): Opening a new connection, currently in state init
+2020-08-12 21:12:55.432729 (ThreadPoolExecutor-1_0): Acquiring new postgres connection "list_dvd_rental_dev".
+2020-08-12 21:12:55.433216 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state init
+2020-08-12 21:12:55.452407 (ThreadPoolExecutor-1_0): Using postgres connection "list_dvd_rental_dev".
+2020-08-12 21:12:55.452589 (ThreadPoolExecutor-1_0): On list_dvd_rental_dev: BEGIN
+2020-08-12 21:12:55.466010 (ThreadPoolExecutor-1_0): SQL status: BEGIN in 0.01 seconds
+2020-08-12 21:12:55.466220 (ThreadPoolExecutor-1_0): Using postgres connection "list_dvd_rental_dev".
+2020-08-12 21:12:55.466332 (ThreadPoolExecutor-1_0): On list_dvd_rental_dev: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "connection_name": "list_dvd_rental_dev"} */
+select
+      'dvd_rental' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'dev'
+    union all
+    select
+      'dvd_rental' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'dev'
+  
+2020-08-12 21:12:55.470008 (ThreadPoolExecutor-1_0): SQL status: SELECT 10 in 0.00 seconds
+2020-08-12 21:12:55.482901 (ThreadPoolExecutor-1_0): On list_dvd_rental_dev: ROLLBACK
+2020-08-12 21:12:55.483254 (ThreadPoolExecutor-1_0): On list_dvd_rental_dev: Close
+2020-08-12 21:12:55.508782 (MainThread): Using postgres connection "master".
+2020-08-12 21:12:55.508983 (MainThread): On master: BEGIN
+2020-08-12 21:12:55.516202 (MainThread): SQL status: BEGIN in 0.01 seconds
+2020-08-12 21:12:55.516380 (MainThread): Using postgres connection "master".
+2020-08-12 21:12:55.516481 (MainThread): On master: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+2020-08-12 21:12:55.902220 (MainThread): SQL status: SELECT 55 in 0.39 seconds
+2020-08-12 21:12:55.966795 (MainThread): On master: ROLLBACK
+2020-08-12 21:12:55.967198 (MainThread): On master: Close
+2020-08-12 21:12:55.967740 (MainThread): 17:12:55 | Concurrency: 1 threads (target='dev')
+2020-08-12 21:12:55.967940 (MainThread): 17:12:55 | 
+2020-08-12 21:12:55.969887 (Thread-1): Began running node test.dbt_play.accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German
+2020-08-12 21:12:55.970163 (Thread-1): 17:12:55 | 1 of 5 START test accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German [RUN]
+2020-08-12 21:12:55.970628 (Thread-1): Acquiring new postgres connection "test.dbt_play.accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German".
+2020-08-12 21:12:55.970774 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:55.970907 (Thread-1): Compiling test.dbt_play.accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German
+2020-08-12 21:12:56.003724 (Thread-1): Writing injected SQL for node "test.dbt_play.accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German"
+2020-08-12 21:12:56.005162 (Thread-1): finished collecting timing info
+2020-08-12 21:12:56.005810 (Thread-1): Using postgres connection "test.dbt_play.accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German".
+2020-08-12 21:12:56.006023 (Thread-1): On test.dbt_play.accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German: BEGIN
+2020-08-12 21:12:56.033373 (Thread-1): SQL status: BEGIN in 0.03 seconds
+2020-08-12 21:12:56.034115 (Thread-1): Using postgres connection "test.dbt_play.accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German".
+2020-08-12 21:12:56.034472 (Thread-1): On test.dbt_play.accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "test.dbt_play.accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German"} */
+
+
+
+
+
+with all_values as (
+
+    select distinct
+        language as value_field
+
+    from "dvd_rental"."dev"."customer_profile"
+
+),
+
+validation_errors as (
+
+    select
+        value_field
+
+    from all_values
+    where value_field not in (
+        'English','Italian','Japanese','Mandarin','French','German'
+    )
+)
+
+select count(*) as validation_errors
+from validation_errors
+
+
+2020-08-12 21:12:56.036629 (Thread-1): SQL status: SELECT 1 in 0.00 seconds
+2020-08-12 21:12:56.037007 (Thread-1): finished collecting timing info
+2020-08-12 21:12:56.037346 (Thread-1): On test.dbt_play.accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German: ROLLBACK
+2020-08-12 21:12:56.037605 (Thread-1): On test.dbt_play.accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German: Close
+2020-08-12 21:12:56.038121 (Thread-1): 17:12:56 | 1 of 5 PASS accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German [PASS in 0.07s]
+2020-08-12 21:12:56.038306 (Thread-1): Finished running node test.dbt_play.accepted_values_customer_profile_language__English__Italian__Japanese__Mandarin__French__German
+2020-08-12 21:12:56.038546 (Thread-1): Began running node test.dbt_play.accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z
+2020-08-12 21:12:56.038884 (Thread-1): 17:12:56 | 2 of 5 START test accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z [RUN]
+2020-08-12 21:12:56.039377 (Thread-1): Acquiring new postgres connection "test.dbt_play.accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z".
+2020-08-12 21:12:56.039579 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:56.039713 (Thread-1): Compiling test.dbt_play.accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z
+2020-08-12 21:12:56.076250 (Thread-1): Writing injected SQL for node "test.dbt_play.accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z"
+2020-08-12 21:12:56.076997 (Thread-1): finished collecting timing info
+2020-08-12 21:12:56.077467 (Thread-1): Using postgres connection "test.dbt_play.accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z".
+2020-08-12 21:12:56.077600 (Thread-1): On test.dbt_play.accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z: BEGIN
+2020-08-12 21:12:56.088856 (Thread-1): SQL status: BEGIN in 0.01 seconds
+2020-08-12 21:12:56.089041 (Thread-1): Using postgres connection "test.dbt_play.accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z".
+2020-08-12 21:12:56.089149 (Thread-1): On test.dbt_play.accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "test.dbt_play.accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z"} */
+
+
+
+
+
+with all_values as (
+
+    select distinct
+        last_initial as value_field
+
+    from "dvd_rental"."dev"."customer_profile"
+
+),
+
+validation_errors as (
+
+    select
+        value_field
+
+    from all_values
+    where value_field not in (
+        'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'
+    )
+)
+
+select count(*) as validation_errors
+from validation_errors
+
+
+2020-08-12 21:12:56.091388 (Thread-1): SQL status: SELECT 1 in 0.00 seconds
+2020-08-12 21:12:56.091693 (Thread-1): finished collecting timing info
+2020-08-12 21:12:56.092019 (Thread-1): On test.dbt_play.accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z: ROLLBACK
+2020-08-12 21:12:56.092299 (Thread-1): On test.dbt_play.accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z: Close
+2020-08-12 21:12:56.092825 (Thread-1): 17:12:56 | 2 of 5 PASS accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z [PASS in 0.05s]
+2020-08-12 21:12:56.093034 (Thread-1): Finished running node test.dbt_play.accepted_values_customer_profile_last_initial__A__B__C__D__E__F__G__H__I__J__K__L__M__N__O__P__Q__R__S__T__U__V__W__X__Y__Z
+2020-08-12 21:12:56.093287 (Thread-1): Began running node test.dbt_play.not_null_customer_profile_active
+2020-08-12 21:12:56.093569 (Thread-1): 17:12:56 | 3 of 5 START test not_null_customer_profile_active................... [RUN]
+2020-08-12 21:12:56.094004 (Thread-1): Acquiring new postgres connection "test.dbt_play.not_null_customer_profile_active".
+2020-08-12 21:12:56.094145 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:56.094380 (Thread-1): Compiling test.dbt_play.not_null_customer_profile_active
+2020-08-12 21:12:56.107673 (Thread-1): Writing injected SQL for node "test.dbt_play.not_null_customer_profile_active"
+2020-08-12 21:12:56.108276 (Thread-1): finished collecting timing info
+2020-08-12 21:12:56.108612 (Thread-1): Using postgres connection "test.dbt_play.not_null_customer_profile_active".
+2020-08-12 21:12:56.108724 (Thread-1): On test.dbt_play.not_null_customer_profile_active: BEGIN
+2020-08-12 21:12:56.121850 (Thread-1): SQL status: BEGIN in 0.01 seconds
+2020-08-12 21:12:56.122033 (Thread-1): Using postgres connection "test.dbt_play.not_null_customer_profile_active".
+2020-08-12 21:12:56.122134 (Thread-1): On test.dbt_play.not_null_customer_profile_active: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "test.dbt_play.not_null_customer_profile_active"} */
+
+
+
+
+select count(*) as validation_errors
+from "dvd_rental"."dev"."customer_profile"
+where active is null
+
+
+2020-08-12 21:12:56.123565 (Thread-1): SQL status: SELECT 1 in 0.00 seconds
+2020-08-12 21:12:56.123878 (Thread-1): finished collecting timing info
+2020-08-12 21:12:56.124223 (Thread-1): On test.dbt_play.not_null_customer_profile_active: ROLLBACK
+2020-08-12 21:12:56.124493 (Thread-1): On test.dbt_play.not_null_customer_profile_active: Close
+2020-08-12 21:12:56.124964 (Thread-1): 17:12:56 | 3 of 5 PASS not_null_customer_profile_active......................... [PASS in 0.03s]
+2020-08-12 21:12:56.125166 (Thread-1): Finished running node test.dbt_play.not_null_customer_profile_active
+2020-08-12 21:12:56.125424 (Thread-1): Began running node test.dbt_play.not_null_customer_profile_customer_id
+2020-08-12 21:12:56.125733 (Thread-1): 17:12:56 | 4 of 5 START test not_null_customer_profile_customer_id.............. [RUN]
+2020-08-12 21:12:56.126124 (Thread-1): Acquiring new postgres connection "test.dbt_play.not_null_customer_profile_customer_id".
+2020-08-12 21:12:56.126243 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:56.126378 (Thread-1): Compiling test.dbt_play.not_null_customer_profile_customer_id
+2020-08-12 21:12:56.147542 (Thread-1): Writing injected SQL for node "test.dbt_play.not_null_customer_profile_customer_id"
+2020-08-12 21:12:56.148436 (Thread-1): finished collecting timing info
+2020-08-12 21:12:56.148959 (Thread-1): Using postgres connection "test.dbt_play.not_null_customer_profile_customer_id".
+2020-08-12 21:12:56.149077 (Thread-1): On test.dbt_play.not_null_customer_profile_customer_id: BEGIN
+2020-08-12 21:12:56.157124 (Thread-1): SQL status: BEGIN in 0.01 seconds
+2020-08-12 21:12:56.157316 (Thread-1): Using postgres connection "test.dbt_play.not_null_customer_profile_customer_id".
+2020-08-12 21:12:56.157420 (Thread-1): On test.dbt_play.not_null_customer_profile_customer_id: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "test.dbt_play.not_null_customer_profile_customer_id"} */
+
+
+
+
+select count(*) as validation_errors
+from "dvd_rental"."dev"."customer_profile"
+where customer_id is null
+
+
+2020-08-12 21:12:56.158872 (Thread-1): SQL status: SELECT 1 in 0.00 seconds
+2020-08-12 21:12:56.159159 (Thread-1): finished collecting timing info
+2020-08-12 21:12:56.159456 (Thread-1): On test.dbt_play.not_null_customer_profile_customer_id: ROLLBACK
+2020-08-12 21:12:56.159706 (Thread-1): On test.dbt_play.not_null_customer_profile_customer_id: Close
+2020-08-12 21:12:56.160349 (Thread-1): 17:12:56 | 4 of 5 PASS not_null_customer_profile_customer_id.................... [PASS in 0.03s]
+2020-08-12 21:12:56.160674 (Thread-1): Finished running node test.dbt_play.not_null_customer_profile_customer_id
+2020-08-12 21:12:56.160994 (Thread-1): Began running node test.dbt_play.unique_customer_profile_customer_id
+2020-08-12 21:12:56.161339 (Thread-1): 17:12:56 | 5 of 5 START test unique_customer_profile_customer_id................ [RUN]
+2020-08-12 21:12:56.161855 (Thread-1): Acquiring new postgres connection "test.dbt_play.unique_customer_profile_customer_id".
+2020-08-12 21:12:56.162259 (Thread-1): Opening a new connection, currently in state closed
+2020-08-12 21:12:56.162525 (Thread-1): Compiling test.dbt_play.unique_customer_profile_customer_id
+2020-08-12 21:12:56.174809 (Thread-1): Writing injected SQL for node "test.dbt_play.unique_customer_profile_customer_id"
+2020-08-12 21:12:56.175356 (Thread-1): finished collecting timing info
+2020-08-12 21:12:56.176012 (Thread-1): Using postgres connection "test.dbt_play.unique_customer_profile_customer_id".
+2020-08-12 21:12:56.176130 (Thread-1): On test.dbt_play.unique_customer_profile_customer_id: BEGIN
+2020-08-12 21:12:56.184150 (Thread-1): SQL status: BEGIN in 0.01 seconds
+2020-08-12 21:12:56.184361 (Thread-1): Using postgres connection "test.dbt_play.unique_customer_profile_customer_id".
+2020-08-12 21:12:56.184480 (Thread-1): On test.dbt_play.unique_customer_profile_customer_id: /* {"app": "dbt", "dbt_version": "0.17.2", "profile_name": "dbt_play", "target_name": "dev", "node_id": "test.dbt_play.unique_customer_profile_customer_id"} */
+
+
+
+
+select count(*) as validation_errors
+from (
+
+    select
+        customer_id
+
+    from "dvd_rental"."dev"."customer_profile"
+    where customer_id is not null
+    group by customer_id
+    having count(*) > 1
+
+) validation_errors
+
+
+2020-08-12 21:12:56.189306 (Thread-1): SQL status: SELECT 1 in 0.00 seconds
+2020-08-12 21:12:56.190033 (Thread-1): finished collecting timing info
+2020-08-12 21:12:56.190387 (Thread-1): On test.dbt_play.unique_customer_profile_customer_id: ROLLBACK
+2020-08-12 21:12:56.190737 (Thread-1): On test.dbt_play.unique_customer_profile_customer_id: Close
+2020-08-12 21:12:56.191199 (Thread-1): 17:12:56 | 5 of 5 PASS unique_customer_profile_customer_id...................... [PASS in 0.03s]
+2020-08-12 21:12:56.191384 (Thread-1): Finished running node test.dbt_play.unique_customer_profile_customer_id
+2020-08-12 21:12:56.279144 (MainThread): Acquiring new postgres connection "master".
+2020-08-12 21:12:56.279430 (MainThread): Opening a new connection, currently in state closed
+2020-08-12 21:12:56.279929 (MainThread): 17:12:56 | 
+2020-08-12 21:12:56.280202 (MainThread): 17:12:56 | Finished running 5 tests in 0.89s.
+2020-08-12 21:12:56.280443 (MainThread): Connection 'master' was properly closed.
+2020-08-12 21:12:56.280666 (MainThread): Connection 'test.dbt_play.unique_customer_profile_customer_id' was properly closed.
+2020-08-12 21:12:56.303733 (MainThread): 
+2020-08-12 21:12:56.303940 (MainThread): Completed successfully
+2020-08-12 21:12:56.304136 (MainThread): 
+Done. PASS=5 WARN=0 ERROR=0 SKIP=0 TOTAL=5
+2020-08-12 21:12:56.304391 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa14a97090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa14bb3710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0xa14bb3f10>]}
+2020-08-12 21:12:56.304618 (MainThread): Flushing usage events
