@@ -27,6 +27,9 @@ Plugins:
 - https://www.startdataengineering.com/post/dbt-data-build-tool-tutorial/
 - https://github.com/mikekaminsky/dbt-setup-example
 
+
+The trickiest thing that I found was updating the `~/.dbt/profile.yml`. I ended up using RStudio because it makes it easy to find hidden folders and files. I tried vim, but was waisting too much time looking up commands. 
+
 ## Info provided as a the default from dbt
 ### Using the starter project
 
