@@ -5,8 +5,8 @@ with customer_by_category as (
             column='film_category',
             values=dbt_utils.get_column_values(
                 table=ref('rental_details'), 
-                column='film_category'
-            )
+                column='film_category'),
+            prefix='num_'
         )}}
     FROM {{ref('rental_details')}}
     GROUP BY customer_id
