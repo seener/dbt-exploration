@@ -1,4 +1,4 @@
-with customer_by_category as (
+with customer_by_category_dollars as (
     SELECT 
         customer_id,
         {{dbt_utils.pivot(
