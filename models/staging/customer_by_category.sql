@@ -2,10 +2,10 @@ with customer_by_category as (
     SELECT 
         customer_id,
         {{dbt_utils.pivot(
-            'film_category',
-            dbt_utils.get_column_values(
-                ref('rental_details'), 
-                'film_category'
+            column='film_category',
+            values=dbt_utils.get_column_values(
+                table=ref('rental_details'), 
+                column='film_category'
             )
         )}}
     FROM {{ref('rental_details')}}
